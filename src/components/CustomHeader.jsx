@@ -17,7 +17,7 @@ const CustomHeader = ({ title, canGoBack }) => {
         />
       )}
       <View className="items-center justify-center ">
-        <Text className="text-white text-3xl">{title}</Text>
+        <Text className="text-white text-3xl font-[SpaceMono]">{title}</Text>
       </View>
     </View>
   );

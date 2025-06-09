@@ -26,9 +26,11 @@ const TodoItem = ({ item }) => {
   return (
     <>
       <HView className="p-2 justify-between border items-center border-blue-300 rounded-lg">
-        <View>
-          <Text>{item?.title}</Text>
-          <Text className="text-xs opacity-70">{item?.desc}</Text>
+        <View className="w-full max-w-[65%]">
+          <Text className="font-[SpaceMono]">{item?.title}</Text>
+          <Text className="text-xs opacity-70 font-[SpaceMono]">
+            {item?.desc}
+          </Text>
         </View>
         <HView className="gap-2">
           <Button title="EDIT" onPress={() => setVisible(true)} />
@@ -47,13 +49,13 @@ const TodoItem = ({ item }) => {
         >
           <View className="p-7 gap-4  bg-white/70 absolute top-[30%] w-[90%] rounded-lg ml-[5%] ">
             <TextInput
-              className="border border-blue-300 rounded-lg px-2"
+              className="border border-blue-300 rounded-lg px-2 font-[SpaceMono]"
               value={value}
               onChangeText={setValue}
               placeholder="Enter your todo"
             />
             <TextInput
-              className="border border-blue-300 rounded-lg px-2 min-h-[125]"
+              className="border border-blue-300 rounded-lg px-2 min-h-[125] font-[SpaceMono]"
               value={desc}
               onChangeText={setDesc}
               placeholder="Enter your description"

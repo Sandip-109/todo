@@ -36,13 +36,13 @@ const Todos = () => {
       <CustomHeader title="Add New Todo" canGoBack />
       <View className="px-4 gap-4">
         <TextInput
-          className="border border-blue-300 rounded-lg px-2"
+          className="border border-blue-300 rounded-lg px-2 font-[SpaceMono]"
           value={value}
           onChangeText={setValue}
           placeholder="Enter your todo"
         />
         <TextInput
-          className="border border-blue-300 rounded-lg px-2 min-h-[125]"
+          className="border border-blue-300 rounded-lg px-2 min-h-[125] font-[SpaceMono]"
           value={desc}
           onChangeText={setDesc}
           placeholder="Enter your description"
