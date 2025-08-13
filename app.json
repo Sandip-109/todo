@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "todo-exercise",
-    "slug": "todo-exercise",
+    "name": "todos app",
+    "slug": "todos-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
-    "scheme": "todoexercise",
+    "scheme": "todosapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
